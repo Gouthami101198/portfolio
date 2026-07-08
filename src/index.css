@@ -1,0 +1,212 @@
+/* ==========================
+   Google Fonts
+========================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700;800&display=swap");
+
+/* ==========================
+   CSS Reset
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   Variables
+========================== */
+
+:root{
+
+    --bg-color:#000;
+    --white:#fff;
+    --text:#cfcfcf;
+    --gold:#f4c542;
+    --transition:.3s ease;
+
+}
+
+/* ==========================
+   HTML
+========================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ==========================
+   Body
+========================== */
+
+body{
+
+    background:var(--bg-color);
+    color:var(--white);
+    font-family:"Poppins",sans-serif;
+    overflow-x:hidden;
+
+}
+
+/* ==========================
+   Root
+========================== */
+
+#root{
+
+    width:100%;
+    min-height:100vh;
+
+}
+
+/* ==========================
+   Container
+========================== */
+
+.container{
+
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+
+}
+
+/* ==========================
+   Typography
+========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:"Playfair Display",serif;
+
+}
+
+p{
+
+    color:var(--text);
+
+}
+
+/* ==========================
+   Links
+========================== */
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+/* ==========================
+   Lists
+========================== */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+button{
+
+    border:none;
+    outline:none;
+    cursor:pointer;
+    font-family:inherit;
+
+}
+
+/* ==========================
+   Images
+========================== */
+
+img{
+
+    width:100%;
+    display:block;
+
+}
+
+/* ==========================
+   Sections
+========================== */
+
+section{
+
+    width:100%;
+
+}
+
+/* ==========================
+   Scrollbar
+========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#666;
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--gold);
+
+}
+
+/* ==========================
+   Selection
+========================== */
+
+::selection{
+
+    background:var(--gold);
+    color:#000;
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:992px){
+
+.container{
+
+    width:95%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+}

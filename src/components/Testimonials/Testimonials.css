@@ -1,0 +1,155 @@
+/* ==========================
+   TESTIMONIALS SECTION
+========================== */
+
+.testimonials{
+    width:100%;
+    background:#000;
+    padding:100px 7%;
+}
+
+/* ==========================
+   TOP
+========================== */
+
+.testimonials-top{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:70px;
+    flex-wrap:wrap;
+    gap:30px;
+
+}
+
+/* ==========================
+   SUBTITLE
+========================== */
+
+.testimonials-subtitle{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    color:#9b9b9b;
+    font-size:20px;
+    font-weight:500;
+
+    margin-bottom:20px;
+
+}
+
+.testimonials-subtitle::before{
+
+    content:"";
+    width:45px;
+    height:2px;
+    background:#f4c542;
+
+}
+
+/* ==========================
+   TITLE
+========================== */
+
+.testimonials-heading h2{
+
+    font-family:"Playfair Display", serif;
+    font-size:72px;
+    line-height:1.1;
+    color:#fff;
+
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.client-btn{
+
+    padding:18px 42px;
+    background:#2a2a2a;
+    color:#fff;
+
+    border:none;
+    border-radius:50px;
+
+    font-size:20px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.client-btn:hover{
+
+    background:#f4c542;
+    color:#000;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.testimonial-wrapper{
+
+    margin-top:40px;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:1200px){
+
+.testimonials-heading h2{
+
+font-size:60px;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.testimonials-top{
+
+flex-direction:column;
+align-items:flex-start;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.testimonials{
+
+padding:70px 20px;
+
+}
+
+.testimonials-heading h2{
+
+font-size:42px;
+
+}
+
+.client-btn{
+
+width:100%;
+
+}
+
+.testimonials-subtitle{
+
+font-size:18px;
+
+}
+
+}

@@ -1,0 +1,146 @@
+/* ===========================
+   CTA SECTION
+=========================== */
+
+.cta {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+  background: #2d2d2d;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===========================
+   BACKGROUND CIRCLES
+=========================== */
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-one {
+  width: 760px;
+  height: 760px;
+  background: rgba(255,255,255,.04);
+}
+
+.circle-two {
+  width: 560px;
+  height: 560px;
+  background: rgba(255,255,255,.07);
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.cta-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: #fff;
+  font-size: 72px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 40px;
+}
+
+.cta-btn {
+  padding: 20px 70px;
+  background:#f6f1eb;
+  color: #333;
+  border: none;
+  border-radius: 60px;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.cta-btn:hover {
+  background: #f4c542;
+  transform: translateY(-5px);
+}
+
+/* ===========================
+   STARS
+=========================== */
+
+.star {
+  position: absolute;
+  color: rgba(255,255,255,.7);
+  font-size: 30px;
+}
+
+.left-star {
+  left: 13%;
+  bottom: 25%;
+}
+
+.right-star {
+  right: 13%;
+  top: 25%;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.cta-content h2{
+font-size:52px;
+}
+
+.circle-one{
+width:550px;
+height:550px;
+}
+
+.circle-two{
+width:380px;
+height:380px;
+}
+
+}
+
+@media(max-width:768px){
+
+.cta{
+padding:60px 20px;
+min-height:350px;
+}
+
+.cta-content h2{
+font-size:38px;
+}
+
+.cta-btn{
+width:100%;
+max-width:300px;
+font-size:18px;
+padding:16px;
+}
+
+.circle-one{
+width:380px;
+height:380px;
+}
+
+.circle-two{
+width:260px;
+height:260px;
+}
+
+.star{
+font-size:20px;
+}
+
+}

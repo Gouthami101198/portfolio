@@ -1,0 +1,123 @@
+/* ===========================
+   SERVICE CARD
+=========================== */
+
+.service-card {
+  background: #f8f3ee;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 35px 40px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  background: #f4ede6;
+}
+
+/* Header */
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.service-left::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #222;
+}
+
+.service-title {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  color: #222;
+  font-weight: 700;
+}
+
+.service-number {
+  font-size: 48px;
+  color: #b3b3b3;
+  font-weight: 300;
+}
+
+/* Active Content */
+
+.service-content {
+  margin-top: 30px;
+}
+
+.service-description {
+  color: #666;
+  font-size: 19px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  max-width: 700px;
+}
+
+.service-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.feature-item {
+  color: #555;
+  font-size: 18px;
+}
+
+/* Hover */
+
+.service-card.active {
+  background: #f8f3ee;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+  .service-title {
+    font-size: 30px;
+  }
+
+  .service-number {
+    font-size: 36px;
+  }
+
+  .service-features {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width:768px) {
+
+  .service-card {
+    padding: 25px;
+  }
+
+  .service-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .service-title {
+    font-size: 26px;
+  }
+
+  .service-number {
+    font-size: 28px;
+  }
+
+  .service-description {
+    font-size: 16px;
+  }
+
+}

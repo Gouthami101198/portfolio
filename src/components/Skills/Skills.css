@@ -1,0 +1,111 @@
+/* ==========================
+   SKILLS SECTION
+========================== */
+
+.skills {
+  width: 100%;
+  background: #000;
+  padding: 100px 7%;
+}
+
+/* ==========================
+   SECTION HEADER
+========================== */
+
+.skills-header {
+  margin-bottom: 70px;
+}
+
+.skills-subtitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  color: #9b9b9b;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.skills-subtitle::before {
+  content: "";
+  width: 45px;
+  height: 2px;
+  background: #f4c542;
+}
+
+.skills-title {
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  color: #fff;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+/* ==========================
+   SKILLS GRID
+========================== */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 1200px) {
+
+  .skills-title {
+    font-size: 58px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .skills {
+    padding: 70px 20px;
+  }
+
+  .skills-header {
+    text-align: center;
+  }
+
+  .skills-subtitle {
+    justify-content: center;
+  }
+
+  .skills-title {
+    font-size: 42px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-title {
+    font-size: 34px;
+  }
+
+  .skills-subtitle {
+    font-size: 18px;
+  }
+
+}

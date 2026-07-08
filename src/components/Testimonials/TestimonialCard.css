@@ -1,0 +1,185 @@
+/* ==========================
+   TESTIMONIAL CONTAINER
+========================== */
+
+.testimonial-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.testimonial-card{
+
+    background:#ffffff;
+    border-radius:30px;
+    padding:50px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+/* Quote */
+
+.quote-icon{
+
+    font-size:60px;
+    color:#d6d6d6;
+    margin-bottom:25px;
+
+}
+
+/* Text */
+
+.testimonial-text{
+
+    font-size:28px;
+    color:#444;
+    line-height:1.8;
+    margin-bottom:45px;
+
+}
+
+/* User */
+
+.testimonial-user h3{
+
+    font-size:40px;
+    color:#222;
+    margin-bottom:10px;
+    font-weight:700;
+
+}
+
+.testimonial-user span{
+
+    color:#666;
+    font-size:20px;
+
+}
+
+/* Navigation */
+
+.testimonial-navigation{
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:20px;
+    margin-top:40px;
+
+}
+
+.arrow-btn{
+
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:none;
+    background:#111;
+    color:#fff;
+    cursor:pointer;
+    font-size:24px;
+    transition:.3s;
+
+}
+
+.arrow-btn:hover{
+
+    background:#f4c542;
+    color:#000;
+
+}
+
+.page-number{
+
+    font-size:36px;
+    color:#333;
+    font-weight:700;
+
+}
+
+/* ==========================
+   IMAGE
+========================== */
+
+.testimonial-image{
+
+    width:100%;
+    height:700px;
+    overflow:hidden;
+    border-radius:35px;
+
+}
+
+.testimonial-image img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+
+}
+
+.testimonial-image img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:1200px){
+
+.testimonial-container{
+
+grid-template-columns:1fr;
+
+}
+
+.testimonial-image{
+
+height:500px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.testimonial-card{
+
+padding:30px;
+
+}
+
+.testimonial-text{
+
+font-size:20px;
+
+}
+
+.testimonial-user h3{
+
+font-size:28px;
+
+}
+
+.testimonial-image{
+
+height:350px;
+
+}
+
+.testimonial-navigation{
+
+justify-content:center;
+
+}
+
+}
